@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Showcase from './components/Showcase';
+import CreationsMobile from './components/CreationsMobile';
 
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <>
     <Header/>
     <Showcase />
+    <CreationsMobile/>
     </>
   );
 }
