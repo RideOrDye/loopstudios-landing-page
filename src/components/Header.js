@@ -6,7 +6,7 @@ const Header = () => {
         
         <header className="header">
             <div className="logo">
-                <img src={logo} alt="Loopstudios"/>
+                <img src={logo} alt=""/>
             </div>
             
           <nav>

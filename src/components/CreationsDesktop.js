@@ -1,12 +1,19 @@
 import React from 'react'
-import data from '../dataMobile.js'
+import data from '../dataDesktop.js'
 
-const CreationsMobile = () => {
+const CreationsDesktop  = () => {
 
     const [cards, setCards] = React.useState(data)
     return (
-        <section className="creations-mobile">
+        <section className="creations-desktop">
+            <div className="title">
             <h2>Our creations</h2>
+         
+            <div className="btn-container">
+                <button className="btn">See All</button>
+                </div>
+              </div>
+           
             <section>
                 {cards.map((cards) => {
                     const {id,image,title} = cards
@@ -19,12 +26,9 @@ const CreationsMobile = () => {
                         </article>
                     )
                 })}
-            </section>
-            <div className="btn-container">
-                <button className="btn">See All</button>
-            </div>
+            </section> 
         </section>
     )
 }
 
-export default CreationsMobile
+export default CreationsDesktop
